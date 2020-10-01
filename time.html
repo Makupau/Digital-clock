@@ -10,13 +10,21 @@
             background-color: grey;
         }
         
+          h1 {
+            color: white;
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: lighter;
+            text-decoration: underline;
+        }
+        
         #dtime {
-            color: rgb(21, 255, 0);
+            color: rgb(0, 163, 250);
             display: flex;
             justify-content: center;
             font-size: 900%;
             margin-top: 100px;
-            background-color: red;
+            background-color: whitesmoke;
             flex-shrink: 1;
             justify-content: center;
             font-family: serif;
@@ -24,7 +32,7 @@
     </style>
     </body>
 
-    <div id="dtime"></div>
+    <div id="displaytime"></div>
     <!--this store the main numerical digit or display time of the digitalclock-->
     <!-- the div should be empty because it already contains the time to display-->
     <script>
@@ -67,7 +75,7 @@
                 sec = '0' + sec; //it only work on single digit//0 dissapear after the two digit
             }
             //this help to get id of a div and its innerhtml//
-            document.getElementById('dtime').innerHTML = hrs + ':' + min + ':' + sec + ' ' + dn;
+            document.getElementById('displaytime').innerHTML = hrs + ':' + min + ':' + sec + ' ' + dn;
 
             //in the above code,we show the inner html of div and set its inner text in time format
             //while writing this code you should be careful
